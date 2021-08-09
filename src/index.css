@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,505,700,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a.nav-link {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+a.nav-link.active {
+  font-weight: 500;
+  color: black;
+}
+
+header hr {
+  border: none;
+  border-bottom: 2px solid #b7b7b7;
+  margin-top: 0;
+  margin-left: 0;
+  /* max-width: 400px !important; */
+}
+
+@media screen and (min-width: 576px) {
+  header hr {
+    max-width: 500px !important;
+  }
+}
+
+header {
+  /* font-size: 0.8rem; */
+}
+
+.letter-logo {
+  border: none;
+  border-left: 2px solid #b7b7b7;
+}
+
+.letter-logo :first-child {
+  letter-spacing: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.letter-logo :last-child {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
