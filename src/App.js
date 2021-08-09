@@ -12,7 +12,7 @@ function App() {
       <CurrentPage>
         <Switch>
           <Route path="/employees/create" component={CreateEmployee} />
-          <Route path="/employees" component={ViewEmployees} />
+          <Route path="/employees/listings" component={ViewEmployees} />
 
           <Redirect from="/" exact to="/employees/create"></Redirect>
           <Redirect to="/not-found" />
