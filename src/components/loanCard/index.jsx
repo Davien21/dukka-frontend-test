@@ -3,7 +3,7 @@ import { calendarImage } from "../../images";
 
 function LoanCard({ loan }) {
   return (
-    <div key={loan.id} className="row mb-4 loan-card border">
+    <div key={loan.id} className="row mb-3 loan-card border">
       <div className="col-auto px-4 py-3 month">
         <div className="text-center justify-content-center">
           <img width={15} height={15} src={calendarImage} alt="" />

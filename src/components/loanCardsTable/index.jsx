@@ -13,7 +13,13 @@ function LoanCardsTable(props) {
       <p className="row h5 my-4">LOAN RECORD</p>
       {years.map((year) => (
         <div key={year}>
-          {year !== "2020" && year}
+          {year !== "2020" && (
+            <div className="mb-3 row">
+              <span className="pr-4 semi-bold">{year}</span>
+              <hr className="col" />
+            </div>
+          )}
+
           {loans[year].map((loan) => (
             <LoanCard key={loan.id} loan={loan} />
           ))}
