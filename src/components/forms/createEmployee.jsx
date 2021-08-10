@@ -35,7 +35,7 @@ class CreateEmployeeForm extends Form {
   render() {
     return (
       <div>
-        <p className="h5 mt-5 mb-4">CREATE EMPLOYEE PROFILE</p>
+        <p className="h5 mb-4">CREATE EMPLOYEE PROFILE</p>
         <form onSubmit={this.handleSubmit}>
           {this.renderInput("fullName", "Full Name *")}
           {this.renderInput("phoneNumber", "Phone Number *")}
