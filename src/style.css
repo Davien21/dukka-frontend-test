@@ -204,6 +204,7 @@ input.error {
 .profile-card {
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 @media screen and (min-width: 576px) {
@@ -240,15 +241,38 @@ input.error {
 
 .profile-card .image-div,
 .profile-card .details {
-  /* padding-top: 1.25rem; */
   padding-bottom: 1.25rem;
 }
 
+.profile-card .action-btns {
+  position: static;
+}
+
+.profile-card .action-btns button {
+  margin-left: 2px;
+  background-color: inherit;
+  background-image: linear-gradient(
+    rgba(160, 160, 160, 0.9),
+    rgba(160, 160, 160, 0.9)
+  );
+}
+
 @media screen and (min-width: 576px) {
+  .profile-card .action-btns {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
   .profile-card .details {
     padding-top: 0rem;
   }
   .profile-card .details p:first-child {
     margin-top: 0.5rem;
   }
+}
+
+.loan-card .month {
+  background-color: #ededed;
 }
