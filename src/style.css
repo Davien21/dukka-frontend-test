@@ -218,7 +218,7 @@ input.error {
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 
-.profile-card:hover {
+.pointer.profile-card:hover {
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 
