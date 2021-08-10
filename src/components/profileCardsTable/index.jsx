@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom";
-function ProfileCardsTable({ employees }) {
+import { deleteImage, editImage } from "../../images";
+import Button from "../button";
+import { toast } from "react-toastify";
+function ProfileCardsTable({ employees, onDelete }) {
   const history = useHistory();
   return (
     <div className="container-fluid">
@@ -20,6 +23,24 @@ function ProfileCardsTable({ employees }) {
             <p>{employee.position}</p>
             <p>{employee.phoneNumber}</p>
             <p>{employee.email}</p>
+          </div>
+          <div className="action-btns">
+            <Button
+              onClick={(e) => {
+                toast.error("This feature is currently not available");
+                e.stopPropagation();
+              }}
+            >
+              <img width={20} height={20} src={editImage} alt="" />
+            </Button>
+            <Button
+              onClick={(e) => {
+                onDelete(employee.id);
+                e.stopPropagation();
+              }}
+            >
+              <img width={20} height={20} src={deleteImage} alt="" />
+            </Button>
           </div>
         </motion.div>
       ))}
