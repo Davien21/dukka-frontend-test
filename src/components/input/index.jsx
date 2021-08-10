@@ -10,13 +10,7 @@ const Input = ({ name, label, error, ...rest }) => {
         {label}
       </label>
 
-      <input
-        {...rest}
-        name={name}
-        autoFocus={name === "fullName" && true}
-        id={name}
-        className={inputClassName}
-      />
+      <input {...rest} name={name} id={name} className={inputClassName} />
       {error && <div className={errorClassName}>{error}</div>}
     </div>
   );
