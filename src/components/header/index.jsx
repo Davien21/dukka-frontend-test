@@ -11,7 +11,7 @@ function Header(props) {
         <SideNav />
         <LetterLogo />
       </nav>
-      <hr className="row" />
+      <hr className="row my-0" />
     </header>
   );
 }
