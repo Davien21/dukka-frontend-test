@@ -1,7 +1,7 @@
 import React from "react";
 
 function CreateEmployee(props) {
-  return <div>Hi, Create Employee Page</div>;
+  return <div>Create an Employee</div>;
 }
 
 export default CreateEmployee;
