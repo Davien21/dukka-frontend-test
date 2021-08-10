@@ -7,7 +7,7 @@ import ViewEmployees from "./pages/viewEmployees/index";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Header />
       <CurrentPage>
         <Switch>
@@ -18,7 +18,7 @@ function App() {
           <Redirect to="/not-found" />
         </Switch>
       </CurrentPage>
-    </>
+    </div>
   );
 }
 
