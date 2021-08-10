@@ -1,3 +1,24 @@
 [
-  {""}
+  {
+    "id": "AqbBP2bTjP",
+    "month": "FEB",
+
+    "year": "2020",
+    "borrowed": "50000",
+    "receivable": "100000"
+  },
+  {
+    "id": "dfM3iOJmHC",
+    "month": "JAN",
+    "year": "2020",
+    "borrowed": "50000",
+    "receivable": "100000"
+  },
+  {
+    "id": "Ri2jslz7uh",
+    "month": "DEC",
+    "year": "2019",
+    "borrowed": "50000",
+    "receivable": "100000"
+  }
 ]
