@@ -1,6 +1,7 @@
-import React from "react";
+import { toast } from "react-toastify";
 import Form from "./index";
 import Joi from "joi-browser";
+import { createNewEmployee, storeError } from "../../services/employees.js";
 
 class CreateEmployeeForm extends Form {
   state = {
@@ -11,7 +12,6 @@ class CreateEmployeeForm extends Form {
       position: "",
       salary: "",
     },
-    employees: [],
     errors: {},
   };
 
@@ -21,15 +21,25 @@ class CreateEmployeeForm extends Form {
     phoneNumber: Joi.string().required().label("Phone Number"),
     email: Joi.string().email().required().label("Email Address"),
     position: Joi.string().required().label("Position"),
-    salary: Joi.string().required().label("Salary"),
+    salary: Joi.number().integer().min(0).required().label("Salary"),
   };
 
   async componentDidMount() {}
 
-  doSubmit = async () => {
+  async openEmployeePage(id) {
+    this.props.history.push(`/employees/listings/${id}`);
+  }
+
+  doSubmit = () => {
     const employee = { ...this.state.data };
-    console.log(employee);
-    // this.props.history.push("/employees");
+    let errors = storeError(employee);
+    if (errors) return this.setState({ errors });
+
+    const newEmployee = createNewEmployee(employee);
+
+    toast.success("Employee Profile was Created Successfully", {
+      onClose: () => this.openEmployeePage(newEmployee.id),
+    });
   };
 
   render() {
