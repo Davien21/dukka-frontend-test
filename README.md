@@ -1,6 +1,6 @@
 # SAMASYS LOAN APP<br>
 Hi there ✌ <br>
-Welcome to the Samasys loan app.<br><br
+Welcome to the Samasys loan app.<br><br>
 
 ## Available Features
 1. Add Employees
