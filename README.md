@@ -1,6 +1,7 @@
 # SAMASYS LOAN APP<br>
 Hi there ✌ <br>
-Welcome to the Samasys loan app.<br><br>
+Welcome to the Samasys loan app.<br>
+It is hosted live [here](https://samasys.vercel.app)<br>
 
 ## Available Features
 1. Add Employees.
