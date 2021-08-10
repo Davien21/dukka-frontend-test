@@ -15,7 +15,7 @@ function LoanCardsTable(props) {
         <div key={year}>
           {year !== "2020" && year}
           {loans[year].map((loan) => (
-            <LoanCard loan={loan} />
+            <LoanCard key={loan.id} loan={loan} />
           ))}
         </div>
       ))}
