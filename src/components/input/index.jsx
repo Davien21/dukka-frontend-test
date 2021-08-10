@@ -13,7 +13,7 @@ const Input = ({ name, label, error, ...rest }) => {
       <input
         {...rest}
         name={name}
-        autoFocus
+        autoFocus={name === "fullName" && true}
         id={name}
         className={inputClassName}
       />
