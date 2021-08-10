@@ -1,0 +1,129 @@
+[
+  {
+    "id": "AqbBP2bTjP",
+    "fullName": "Chidiebere Ekennia",
+    "email": "chidiebereekennia@gmail.com",
+    "phoneNumber": "07012454621",
+    "position": "Frontend Engineer",
+    "salary": "10000",
+    "image": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": "dfM3iOJmHC",
+    "fullName": "Sydney Brown",
+    "email": "sydneybrown@gmail.com",
+    "phoneNumber": "07036424621",
+    "position": "Backend Engineer",
+    "salary": "20000",
+    "image": "https://randomuser.me/api/portraits/men/53.jpg"
+  },
+  {
+    "id": "Ri2jslz7uh",
+    "fullName": "Beyonce Knowles",
+    "email": "beyonceknowles@gmail.com",
+    "phoneNumber": "08036677713",
+    "position": "Musician",
+    "salary": "250000",
+    "image": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "id": "eUjgVF6Llz",
+    "fullName": "David Blaine",
+    "email": "davidblaine@gmail.com",
+    "phoneNumber": "07036424621",
+    "position": "Magician",
+    "salary": "200000",
+    "image": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "id": "pQQCH-H44H",
+    "fullName": "Chris Tucker",
+    "email": "christucker@gmail.com",
+    "phoneNumber": "09026424675",
+    "position": "Actor",
+    "salary": "200000",
+    "image": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+    "id": "LcI7RUfpmS",
+    "fullName": "John Dalton Tucker",
+    "email": "johndalton@gmail.com",
+    "phoneNumber": "09026424675",
+    "position": "Scientist",
+    "salary": "100000",
+    "image": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+    "id": "Hxf8oJyfsQ",
+    "fullName": "Tiwa Savage",
+    "email": "tiwasavage@gmail.com",
+    "phoneNumber": "07043272135",
+    "position": "Musician",
+    "salary": "250000",
+    "image": "https://randomuser.me/api/portraits/women/7.jpg"
+  },
+  {
+    "id": "ZHwsK8esCW",
+    "fullName": "Ben Carson",
+    "email": "bencarson@gmail.com",
+    "phoneNumber": "09026424675",
+    "position": "Neuro Surgeon",
+    "salary": "250000",
+    "image": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+    "id": "tYUX5z5Dzu",
+    "fullName": "James Gunn",
+    "email": "jamesgunn@gmail.com",
+    "phoneNumber": "08045674675",
+    "position": "Movie Director",
+    "salary": "250000",
+    "image": "https://randomuser.me/api/portraits/men/9.jpg"
+  },
+  {
+    "id": "MCmuNjM7e9",
+    "fullName": "Bill Gates",
+    "email": "billgates@gmail.com",
+    "phoneNumber": "08045674675",
+    "position": "Famous Tech Guy",
+    "salary": "250000",
+    "image": "https://randomuser.me/api/portraits/men/10.jpg"
+  },
+
+  {
+    "id": "szmr3u8t9w",
+    "fullName": "Chadwick Boseman",
+    "email": "chadwickboseman@gmail.com",
+    "phoneNumber": "08036677713",
+    "position": "Actor",
+    "salary": "3250000",
+    "image": "https://randomuser.me/api/portraits/men/11.jpg"
+  },
+  {
+    "id": "U4qbr4HAMr",
+    "fullName": "Oprah Winfrey",
+    "email": "oprahwinfrey@gmail.com",
+    "phoneNumber": "09022462151",
+    "position": "Rich Entertainment Lady",
+    "salary": "250000",
+    "image": "https://randomuser.me/api/portraits/men/12.jpg"
+  },
+  {
+    "id": "GyVKb5PFg1",
+    "fullName": "Lionel Messi",
+    "email": "lionelmessi@gmail.com",
+    "phoneNumber": "07043272135",
+    "position": "Footballer",
+    "salary": "450000",
+    "image": "https://randomuser.me/api/portraits/men/13.jpg"
+  },
+  {
+    "id": "7ssgrAZJCk",
+    "fullName": "Michael Jordan",
+    "email": "michaeljordan@gmail.com",
+    "phoneNumber": "08026272135",
+    "position": "Basketballer",
+    "salary": "400000",
+    "image": "https://randomuser.me/api/portraits/men/14.jpg"
+  }
+]
