@@ -40,6 +40,7 @@ class CreateEmployeeForm extends Form {
 
     toast.success("Employee Profile was Created Successfully", {
       onClose: () => this.openEmployeePage(newEmployee.id),
+      autoClose: 3000,
     });
   };
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProfileCardsTable from "./../../components/profileCardsTable/index";
 import Pagination from "./../../components/pagination/index";
 import { paginate } from "../../utils/paginate";
+import NotFound from "./../../components/notFound/index";
 
 function ViewEmployees({ employees, onDelete }) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -9,9 +10,9 @@ function ViewEmployees({ employees, onDelete }) {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
-  console.log();
-  const movies = paginate(employees, currentPage, pageSize);
 
+  const movies = paginate(employees, currentPage, pageSize);
+  if (!employees.length) return <NotFound message="There are no employees" />;
   return (
     <div>
       <p className="h5 mb-4">EMPLOYEES</p>

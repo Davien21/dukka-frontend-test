@@ -1,10 +1,25 @@
 import { motion } from "framer-motion";
 import { useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
+
 import { deleteImage, editImage } from "../../images";
 import Button from "../button";
-import { toast } from "react-toastify";
+
 function ProfileCardsTable({ employees, onDelete }) {
   const history = useHistory();
+
+  const openEmployeeProfile = (id) => history.push(`/employees/listings/${id}`);
+
+  const handleEdit = (e) => {
+    toast.error("This feature is currently not available");
+    e.stopPropagation();
+  };
+
+  const handleDelete = (event, id) => {
+    onDelete(id);
+    event.stopPropagation();
+  };
+
   return (
     <div className="container-fluid">
       {employees.map((employee) => (
@@ -13,7 +28,7 @@ function ProfileCardsTable({ employees, onDelete }) {
           whileHover={{ scale: 1.03 }}
           key={employee.id}
           className="pointer row border profile-card mb-3"
-          onClick={() => history.push(`/employees/listings/${employee.id}`)}
+          onClick={() => openEmployeeProfile(employee.id)}
         >
           <div className="col-sm-4 py-3 py-sm-0 pl-sm-0 ">
             <img src={employee.image} alt="" />
@@ -25,20 +40,10 @@ function ProfileCardsTable({ employees, onDelete }) {
             <p>{employee.email}</p>
           </div>
           <div className="action-btns">
-            <Button
-              onClick={(e) => {
-                toast.error("This feature is currently not available");
-                e.stopPropagation();
-              }}
-            >
+            <Button onClick={handleEdit}>
               <img width={20} height={20} src={editImage} alt="" />
             </Button>
-            <Button
-              onClick={(e) => {
-                onDelete(employee.id);
-                e.stopPropagation();
-              }}
-            >
+            <Button onClick={(event) => handleDelete(event, employee.id)}>
               <img width={20} height={20} src={deleteImage} alt="" />
             </Button>
           </div>
