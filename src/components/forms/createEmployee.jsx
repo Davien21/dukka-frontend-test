@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 import Form from "./index";
 import Joi from "joi-browser";
-import { createNewEmployee, storeError } from "../../services/employees.js";
+import { createEmployee, storeError } from "../../services/employees.js";
 
 class CreateEmployeeForm extends Form {
   state = {
@@ -31,11 +31,12 @@ class CreateEmployeeForm extends Form {
   }
 
   doSubmit = () => {
+    const { employees, onUpdateEmployees } = this.props;
     const employee = { ...this.state.data };
-    let errors = storeError(employee);
-    if (errors) return this.setState({ errors });
+    let errors = storeError(employee, employees);
 
-    const newEmployee = createNewEmployee(employee);
+    if (errors) return this.setState({ errors });
+    const newEmployee = createEmployee(employee, employees, onUpdateEmployees);
 
     toast.success("Employee Profile was Created Successfully", {
       onClose: () => this.openEmployeePage(newEmployee.id),
