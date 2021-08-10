@@ -7,7 +7,17 @@ import { getEmployees } from "../../services/employees";
 
 function Employees(props) {
   const [employees, setEmployees] = useState(getEmployees);
-  
+  const handleDelete = (id) => {
+    let willDelete = window.confirm(
+      "Are you sure you wish to remove this employee?"
+    );
+    if (!willDelete) return;
+    const originalEmployees = employees;
+    const newEmployees = originalEmployees.filter(
+      (employee) => employee.id !== id
+    );
+    setEmployees(newEmployees);
+  };
 
   return (
     <div>
@@ -26,7 +36,13 @@ function Employees(props) {
         <Route
           path="/employees/listings"
           exact
-          render={(props) => <ViewEmployees {...props} employees={employees} />}
+          render={(props) => (
+            <ViewEmployees
+              {...props}
+              employees={employees}
+              onDelete={handleDelete}
+            />
+          )}
         />
         <Route
           path="/employees/listings/:id"
