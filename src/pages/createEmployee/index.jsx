@@ -4,7 +4,7 @@ import CreateEmployeeForm from "./../../components/forms/createEmployee";
 function CreateEmployee(props) {
   return (
     <div>
-      <CreateEmployeeForm />
+      <CreateEmployeeForm {...props} />
     </div>
   );
 }
