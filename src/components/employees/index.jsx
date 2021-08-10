@@ -17,7 +17,7 @@ function Employees(props) {
   };
 
   return (
-    <div>
+    <>
       <Switch>
         <Route
           path="/employees/create"
@@ -50,7 +50,7 @@ function Employees(props) {
         />
         <Redirect to="/not-found" component={NotFound} />
       </Switch>
-    </div>
+    </>
   );
 }
 
