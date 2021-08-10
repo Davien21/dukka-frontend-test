@@ -1,7 +1,7 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import Header from "./components/header/index";
-import CurrentPage from "./components/CurrentPage/index";
+import CurrentPage from "./components/currentPage/index";
 import CreateEmployee from "./pages/createEmployee/index";
 import ViewEmployees from "./pages/viewEmployees/index";
 
