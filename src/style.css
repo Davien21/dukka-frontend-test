@@ -196,3 +196,59 @@ input.error {
   background-color: #262626;
   color: #fff;
 }
+
+.profile-card * {
+  word-wrap: break-word;
+}
+
+.profile-card {
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .profile-card {
+    justify-content: left;
+    text-align: left;
+  }
+}
+
+.paper-box-shadow {
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card:hover {
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card .details p:first-child {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.profile-card .details p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile-card .image-div img {
+  max-width: 100%;
+}
+
+.profile-card .image-div,
+.profile-card .details {
+  /* padding-top: 1.25rem; */
+  padding-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 576px) {
+  .profile-card .details {
+    padding-top: 0rem;
+  }
+  .profile-card .details p:first-child {
+    margin-top: 0.5rem;
+  }
+}
