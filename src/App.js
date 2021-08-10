@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/header/index.jsx";
 import CurrentPage from "./components/currentPage/index.jsx";
 import Employees from "./components/employees/index.jsx";
-import NotFound from './components/notFound/index';
+import NotFound from "./components/notFound/index";
 
 function App() {
   return (
@@ -17,7 +17,8 @@ function App() {
           <Switch>
             <Route path="/employees/" component={Employees} />
             <Redirect from="/" exact to="/employees/listings"></Redirect>
-            <Redirect to="/not-found" component={NotFound} />
+            <Route path="/not-found" component={NotFound}></Route>
+            <Redirect to="/not-found" />
           </Switch>
         </CurrentPage>
       </div>

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import CreateEmployee from "./../../pages/createEmployee/index";
 import ViewEmployees from "./../../pages/viewEmployees/index";
 import EmployeeProfile from "./../../pages/employeeProfile/index";
 import { getEmployees } from "../../services/employees";
+import NotFound from "./../notFound/index";
 
 function Employees(props) {
   const [employees, setEmployees] = useState(getEmployees);
@@ -47,6 +48,7 @@ function Employees(props) {
             <EmployeeProfile {...props} employees={employees} />
           )}
         />
+        <Redirect to="/not-found" component={NotFound} />
       </Switch>
     </div>
   );
