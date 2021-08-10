@@ -1,5 +1,5 @@
 {
-  "name": "dukka-test",
+  "name": "dukka-frontend-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-toastify": "^7.0.4",
-    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
