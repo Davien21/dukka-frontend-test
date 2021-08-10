@@ -175,10 +175,6 @@ input {
   font-size: 0.9rem;
 }
 
-input:focus {
-  /* outline: none; */
-}
-
 input.error {
   outline: 1px solid #d43742;
 }
@@ -188,4 +184,15 @@ input.error {
   font-size: 0.75rem;
   margin-top: 0.25rem;
   /* text-align: end; */
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.black-btn,
+.black-btn:focus,
+.black-btn:hover {
+  background-color: #262626;
+  color: #fff;
 }
