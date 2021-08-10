@@ -24,14 +24,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.<br><br>
 
-### Features Built
+## Available Features
 1. Add Employees
 2. View all Employees - with pagination.
 3. View Individual Employee profile - with a mocked list of loans for each month.
 4. Delete an Employee.
 
-### Improvements / Considerations I made
+## Improvements / Considerations made
 1. I built seperate menus for **Desktop** and **mobile** screens to properly use available screen real estate.
 2. I added alerts / notifications for actions made on the application.
 3. Toasts for passing error or success messages to the user.
-4. 
