@@ -190,6 +190,10 @@ input.error {
   border-radius: 0;
 }
 
+.black-btn {
+  padding: 12px 0 12px 15px;
+}
+
 .black-btn,
 .black-btn:focus,
 .black-btn:hover {
