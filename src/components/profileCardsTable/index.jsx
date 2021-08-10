@@ -11,7 +11,7 @@ function ProfileCardsTable({ employees, onDelete }) {
   const openEmployeeProfile = (id) => history.push(`/employees/listings/${id}`);
 
   const handleEdit = (e) => {
-    toast.error("This feature is currently not available");
+    toast.error("This feature is currently not available", { autoClose: 3000 });
     e.stopPropagation();
   };
 
