@@ -8,7 +8,7 @@ const slideIn = {
 };
 
 const slideOut = {
-  left: "-100%",
+  left: "-140%",
   transition: { duration: 0.5 },
 };
 
@@ -32,7 +32,12 @@ function SideBar({ isOpen, onCloseSideBar }) {
           </NavLink>
         </li>
         <li>
-          <a href="https://github.com" className="nav-item nav-link">
+          <a
+            rel="nofollow noreferrer"
+            href="https://github.com/Davien21/dukka-frontend-test"
+            className="nav-item nav-link"
+            target="_blank"
+          >
             Open in Github
           </a>
         </li>

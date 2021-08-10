@@ -1,7 +1,12 @@
 import React from "react";
+import CreateEmployeeForm from "./../../components/forms/createEmployee";
 
 function CreateEmployee(props) {
-  return <div>Create an Employee</div>;
+  return (
+    <div>
+      <CreateEmployeeForm />
+    </div>
+  );
 }
 
 export default CreateEmployee;
