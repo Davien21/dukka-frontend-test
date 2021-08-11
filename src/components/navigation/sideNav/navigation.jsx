@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { CloseButton } from "./../../closeButton/index";
 import { NavLink } from "react-router-dom";
+import LetterLogo from "./../../letterLogo/index";
 
 const slideIn = {
   left: "0",
@@ -19,7 +20,11 @@ function SideBar({ isOpen, onCloseSideBar }) {
       animate={isOpen ? slideIn : slideOut}
       className="side-nav"
     >
-      <CloseButton toggle={onCloseSideBar} />
+      <div className="d-flex my-2">
+        <CloseButton toggle={onCloseSideBar} />
+        <LetterLogo />
+      </div>
+      <hr />
       <ul>
         <li>
           <NavLink className="nav-item nav-link" to="/employees/create">
