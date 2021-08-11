@@ -18,7 +18,7 @@ It is hosted live [here](https://samasys.vercel.app)<br>
 4. Toasts for passing error or success messages to the user.
 5. A screen for displaying friendly message when an admin attempts to view an invalid employee.<br>
 To test this, Open [https://samasys.vercel.app/employees/listings/1](https://samasys.vercel.app/employees/listings/1)
-6. If there are no more employees in state, a similar screen like in number **4** is displayed.
+6. If there are no more employees in state, a similar screen like in number **5** is displayed.
 7. I added a 404 Page for missing pages / resources.
 
                    
